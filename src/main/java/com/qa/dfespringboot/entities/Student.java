@@ -22,7 +22,7 @@ public class Student {
 	@Column(nullable = false)
 	private String lastName;
 	
-	@Column(nullable = false, unique = true)
+	@Column(nullable = false)
 	private String address;
 	
 	
@@ -70,10 +70,13 @@ public class Student {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	
+	// for testing
 	@Override
 	public int hashCode() {
 		return Objects.hash(address, firstName, id, lastName);
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
