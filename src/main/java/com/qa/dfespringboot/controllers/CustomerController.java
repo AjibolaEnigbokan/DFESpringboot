@@ -46,6 +46,14 @@ public class CustomerController {
 	}
 	
 	
+	@GetMapping("/readByFirstName/{firstName}")                               // ReadByFirstName this is a custom search
+	public List<Customer> readByFirstName(@PathVariable String firstName) {
+		
+		return this.service.readByFirstName(firstName);
+	}
+	
+	
+	
 	
 	
 	// Post -CREATE
@@ -76,7 +84,6 @@ public class CustomerController {
 		//add the updated customer
 	return	this.service.update(id, customer);
 		
-
 		
 	}
 	

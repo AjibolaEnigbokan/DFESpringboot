@@ -25,11 +25,10 @@ public class CustomerService {
 	}
 
 	
-//	public List<Customer> readByFirstName(String firstName){
-//		 return this.repo.findCustomerById;
-//		
-		
-//	}
+	public List<Customer> readByFirstName(String firstName){     // ReadByFirstName this is a custom search
+	 return this.repo.findCustomerByFirstName(firstName);
+	
+	}
 
 	// (GET - READ)
 	// ReadAll

@@ -12,7 +12,7 @@ import com.qa.dfespringboot.entities.Customer;
 public interface CustomerRepo extends JpaRepository<Customer, Long> {
 	
 	
-	//List<Customer> findCustomerByFirstName(String firstName);    // to implement further or what more things with ur API call custome quesries
-	
+	List<Customer> findCustomerByFirstName(String firstName);    // to implement further or what more things with ur API call custome quesries
+	//Person findPersonByName(String name);
 
 }
